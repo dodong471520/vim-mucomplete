@@ -13,16 +13,16 @@ inoremap <silent>        <plug>(MUcompleteOut) <c-g><c-g>
 inoremap <silent>        <plug>(MUcompleteTab) <tab>
 inoremap <silent>        <plug>(MUcompleteCtd) <c-d>
 
-if !get(g:, 'mucomplete#no_mappings', get(g:, 'no_plugin_maps', 0))
-  if !hasmapto('<plug>(MUcompleteCycFwd)', 'i')
-    inoremap <silent> <plug>(MUcompleteFwdKey) <c-j>
-    imap <unique> <c-j> <plug>(MUcompleteCycFwd)
-  endif
-  if !hasmapto('<plug>(MUcompleteCycBwd)', 'i')
-    inoremap <silent> <plug>(MUcompleteBwdKey) <c-h>
-    imap <unique> <c-h> <plug>(MUcompleteCycBwd)
-  endif
-endif
+"if !get(g:, 'mucomplete#no_mappings', get(g:, 'no_plugin_maps', 0))
+"  if !hasmapto('<plug>(MUcompleteCycFwd)', 'i')
+"    inoremap <silent> <plug>(MUcompleteFwdKey) <c-j>
+"    imap <unique> <c-j> <plug>(MUcompleteCycFwd)
+"  endif
+"  if !hasmapto('<plug>(MUcompleteCycBwd)', 'i')
+"    inoremap <silent> <plug>(MUcompleteBwdKey) <c-h>
+"    imap <unique> <c-h> <plug>(MUcompleteCycBwd)
+"  endif
+"endif
 
 let s:ctrlx_out = "\<plug>(MUcompleteOut)"
 let s:compl_mappings = extend({
